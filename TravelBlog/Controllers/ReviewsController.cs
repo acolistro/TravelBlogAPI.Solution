@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using System; 
 
 namespace TravelBlog.Controllers
 {
@@ -17,7 +18,7 @@ namespace TravelBlog.Controllers
     } 
 
     [HttpGet]
-    public ActionResult<IEnumerable<Destination>> Get(int destinationId, string title, int rating)
+    public ActionResult<ICollection<Review>> Get(int destinationId, string title, int rating)
     {
       var query = _db.Reviews.AsQueryable();
 
@@ -43,24 +44,23 @@ namespace TravelBlog.Controllers
       
       return query.ToList();
     }
-
     // public ActionResult Index()
     // {
     //   return View();
     // }
     
-    public ActionResult Create()
-    {
-      ViewBag.DestinationId = new SelectList(_db.Destinations, "DestinationId", "Location");
-      return View();
-    }
+    // public ActionResult Create()
+    // {
+    //   ViewBag.DestinationId = new SelectList(_db.Destinations, "DestinationId", "Location");
+    //   return View();
+    // }
 
-    [HttpPost]
-    public ActionResult Create(Review review)
-    {
-      _db.Reviews.Add(review);
-      _db.SaveChanges();
-      return RedirectToAction("Index");
-    }
+    // [HttpPost]
+    // public ActionResult Create(Review review)
+    // {
+    //   _db.Reviews.Add(review);
+    //   _db.SaveChanges();
+    //   return RedirectToAction("Index");
+    // }
   }
 }
