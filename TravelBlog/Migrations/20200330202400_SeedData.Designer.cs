@@ -2,15 +2,17 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TravelBlog.Models;
 
 namespace TravelBlog.Migrations
 {
     [DbContext(typeof(TravelBlogContext))]
-    partial class TravelBlogContextModelSnapshot : ModelSnapshot
+    [Migration("20200330202400_SeedData")]
+    partial class SeedData
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -36,6 +38,12 @@ namespace TravelBlog.Migrations
                             DestinationId = 1,
                             Location = "Oregon",
                             Year = 1859
+                        },
+                        new
+                        {
+                            DestinationId = 2,
+                            Location = "California",
+                            Year = 1850
                         },
                         new
                         {

@@ -5,8 +5,6 @@ using Microsoft.AspNetCore.Mvc;
 using TravelBlog.Models;
 using Microsoft.EntityFrameworkCore;
 
-
-
 namespace TravelBlog.Controllers
 {
   [Route("api/[controller]")]
