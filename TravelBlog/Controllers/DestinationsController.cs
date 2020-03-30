@@ -17,10 +17,22 @@ namespace TravelBlog.Controllers
       _db = db;
     }
     [HttpGet]
-    public ActionResult<IEnumerable<Destination>> Get()
+    public ActionResult<IEnumerable<Destination>> Get(string location, int year)
     {
-      return _db.Destinations.ToList();
+      var query = _db.Destinations.AsQueryable();
+
+      if (location != null)
+      {
+        query = query.Where(entry => entry.Location == location);
+      }
+
+      if (year != 0)
+      {
+        query = query.Where(entry => entry.Year == year);
+      }
+      return query.ToList();
     }
+
     [HttpPost]
     public void Post([FromBody] Destination destination)
     {
