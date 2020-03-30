@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using TravelBlog.Models;
+using Microsoft.EntityFrameworkCore;
+
+
 
 namespace TravelBlog.Controllers
 {
@@ -24,6 +27,26 @@ namespace TravelBlog.Controllers
     public void Post([FromBody] Destination destination)
     {
       _db.Destinations.Add(destination);
+      _db.SaveChanges();
+    }
+    [HttpGet("{id}")]
+    public ActionResult<Destination> Get(int id)
+    {
+      return _db.Destinations.FirstOrDefault(entry => entry.DestinationId == id);
+    }
+
+    [HttpPut("{id}")]
+    public void Put(int id, [FromBody] Destination destination)
+    {
+      destination.DestinationId = id;
+      _db.Entry(destination).State = EntityState.Modified;
+      _db.SaveChanges();
+    }
+    [HttpDelete("{id}")]
+    public void Delete(int id)
+    {
+      var destinationDelete = _db.Destinations.FirstOrDefault(entry => entry.DestinationId == id);
+      _db.Destinations.Remove(destinationDelete);
       _db.SaveChanges();
     }
   }
