@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
@@ -10,7 +11,7 @@ namespace TravelBlog.Controllers
   public class DestinationsController : ControllerBase
   {
     private TravelBlogContext _db;
-    public DestinationsController(TravelBlog db)
+    public DestinationsController(TravelBlogContext db)
     {
       _db = db;
     }
@@ -20,10 +21,11 @@ namespace TravelBlog.Controllers
       return _db.Destinations.ToList();
     }
     [HttpPost]
-    public void Post([FromBody] Destination destination)
+    public void Post([FromBody] string destination)
     {
-      _db.Destinations.Add(destination);
-      _db.SaveChanges();
+      Console.WriteLine(destination);
+      // _db.Destinations.Add(destination);
+      // _db.SaveChanges();
     }
   }
 }
