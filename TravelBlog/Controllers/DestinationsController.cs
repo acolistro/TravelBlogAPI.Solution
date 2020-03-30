@@ -21,11 +21,10 @@ namespace TravelBlog.Controllers
       return _db.Destinations.ToList();
     }
     [HttpPost]
-    public void Post([FromBody] string destination)
+    public void Post([FromBody] Destination destination)
     {
-      Console.WriteLine(destination);
-      // _db.Destinations.Add(destination);
-      // _db.SaveChanges();
+      _db.Destinations.Add(destination);
+      _db.SaveChanges();
     }
   }
 }
