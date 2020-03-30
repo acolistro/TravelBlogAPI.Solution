@@ -4,8 +4,8 @@
     "windowsAuthentication": false, 
     "anonymousAuthentication": true, 
     "iisExpress": {
-      "applicationUrl": "http://localhost:13454",
-      "sslPort": 44323
+      "applicationUrl": "http://localhost:9825",
+      "sslPort": 44395
     }
   },
   "profiles": {
@@ -17,7 +17,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "Travel": {
+    "TravelBlog": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "api/values",

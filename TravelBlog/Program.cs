@@ -10,15 +10,17 @@ using Microsoft.Extensions.Logging;
 
 namespace TravelBlog
 {
-  public class Program
-  {
-    public static void Main(string[] args)
+    public class Program
     {
-        CreateWebHostBuilder(args).Build().Run();
-    }
+        public static void Main(string[] args)
+        {
+            BuildWebHost(args).Run();
+        }
 
-    public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
-      WebHost.CreateDefaultBuilder(args)
-        .UseStartup<Startup>();
-  }
+        //from https://stackoverflow.com/questions/57745481/unable-to-create-an-object-of-type-mycontext-for-the-different-patterns-suppo
+        public static IWebHost BuildWebHost(string[] args) =>
+        WebHost.CreateDefaultBuilder(args)
+            .UseStartup<Startup>()
+            .Build();
+    }
 }

@@ -9,4 +9,4 @@ namespace TravelBlog.Models
 
     public TravelBlogContext(DbContextOptions<TravelBlogContext> options) : base(options) { }
   }
-}
+} 
