@@ -33,19 +33,19 @@ namespace TravelBlog.Migrations
                     b.HasData(
                         new
                         {
-                            DestinationId = 1,
+                            DestinationId = 6,
                             Location = "Oregon",
                             Year = 1859
                         },
                         new
                         {
-                            DestinationId = 3,
+                            DestinationId = 7,
                             Location = "Washington",
                             Year = 1889
                         },
                         new
                         {
-                            DestinationId = 4,
+                            DestinationId = 8,
                             Location = "Idaho",
                             Year = 1890
                         });

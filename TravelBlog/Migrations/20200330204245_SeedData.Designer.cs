@@ -9,8 +9,8 @@ using TravelBlog.Models;
 namespace TravelBlog.Migrations
 {
     [DbContext(typeof(TravelBlogContext))]
-    [Migration("20200330202543_SeedData2")]
-    partial class SeedData2
+    [Migration("20200330204245_SeedData")]
+    partial class SeedData
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -35,19 +35,19 @@ namespace TravelBlog.Migrations
                     b.HasData(
                         new
                         {
-                            DestinationId = 1,
+                            DestinationId = 6,
                             Location = "Oregon",
                             Year = 1859
                         },
                         new
                         {
-                            DestinationId = 3,
+                            DestinationId = 7,
                             Location = "Washington",
                             Year = 1889
                         },
                         new
                         {
-                            DestinationId = 4,
+                            DestinationId = 8,
                             Location = "Idaho",
                             Year = 1890
                         });

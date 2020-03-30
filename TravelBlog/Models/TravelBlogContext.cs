@@ -12,9 +12,9 @@ namespace TravelBlog.Models
     {
       builder.Entity<Destination>()
       .HasData(
-        new Destination { DestinationId = 1, Location = "Oregon", Year = 1859 },
-        new Destination { DestinationId = 3, Location = "Washington", Year = 1889},
-        new Destination { DestinationId = 4, Location = "Idaho", Year = 1890}
+        new Destination { DestinationId = 6, Location = "Oregon", Year = 1859 },
+        new Destination { DestinationId = 7, Location = "Washington", Year = 1889},
+        new Destination { DestinationId = 8, Location = "Idaho", Year = 1890}
       );
     }
   }
