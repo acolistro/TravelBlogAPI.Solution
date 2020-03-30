@@ -7,8 +7,6 @@ using Microsoft.EntityFrameworkCore;
 
 namespace TravelBlog.Controllers
 {
-  [Route("api/[controller]")]
-  [ApiController]
   public class DestinationsController : ControllerBase
   {
     private TravelBlogContext _db;

@@ -18,9 +18,9 @@ namespace TravelBlog.Models
       );
       builder.Entity<Review>()
       .HasData(
-        new Review { ReviewId = 6, DestinationId = 6, Title = "Oregon", Description = "It was wonderful", Rating = 5 },
-        new Review { ReviewId = 7, DestinationId = 7, Title = "Washington", Description = "It was wonderful", Rating = 4},
-        new Review { ReviewId = 8, DestinationId = 8, Title = "Idaho",  Description = "It was wonderful", Rating = 3}
+        new Review { ReviewId = 1, DestinationId = 6, Title = "Oregon", Description = "It was wonderful", Rating = 5 },
+        new Review { ReviewId = 2, DestinationId = 7, Title = "Washington", Description = "It was wonderful", Rating = 4},
+        new Review { ReviewId = 3, DestinationId = 8, Title = "Idaho",  Description = "It was wonderful", Rating = 3}
       );
     }
   }

@@ -11,6 +11,6 @@ namespace TravelBlog.Models
    [Required]
    public int Year { get; set; }
    [Required]
-   public virtual ICollection<Review> Reviews { get; }
+   public virtual ICollection<Review> Reviews { get; set; }
   }
 }

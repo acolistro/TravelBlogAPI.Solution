@@ -13,9 +13,9 @@ namespace TravelBlog.Models
     [StringLength(2000)]
     public string Description { get; set; }
     [Required]
+    [Range(0, 5, ErrorMessage = "You cannot exceed 5 stars, relax!")]
     public int Rating { get; set; }
     [Required]
-    [Range(0, 5, ErrorMessage = "You cannot exceed 5 stars, relax!")]
     public int DestinationId { get; set; }
     [Required]
     public virtual Destination Destination { get; set; }
