@@ -1,0 +1,14 @@
+C:\Users\ThinkPad\desktop\TravelBlog.Solution\TravelBlog\bin\Debug\netcoreapp2.2\TravelBlog.deps.json
+C:\Users\ThinkPad\desktop\TravelBlog.Solution\TravelBlog\bin\Debug\netcoreapp2.2\TravelBlog.runtimeconfig.json
+C:\Users\ThinkPad\desktop\TravelBlog.Solution\TravelBlog\bin\Debug\netcoreapp2.2\TravelBlog.runtimeconfig.dev.json
+C:\Users\ThinkPad\desktop\TravelBlog.Solution\TravelBlog\bin\Debug\netcoreapp2.2\TravelBlog.dll
+C:\Users\ThinkPad\desktop\TravelBlog.Solution\TravelBlog\bin\Debug\netcoreapp2.2\TravelBlog.pdb
+C:\Users\ThinkPad\desktop\TravelBlog.Solution\TravelBlog\obj\Debug\netcoreapp2.2\TravelBlog.csprojAssemblyReference.cache
+C:\Users\ThinkPad\desktop\TravelBlog.Solution\TravelBlog\obj\Debug\netcoreapp2.2\TravelBlog.csproj.CoreCompileInputs.cache
+C:\Users\ThinkPad\desktop\TravelBlog.Solution\TravelBlog\obj\Debug\netcoreapp2.2\TravelBlog.RazorAssemblyInfo.cache
+C:\Users\ThinkPad\desktop\TravelBlog.Solution\TravelBlog\obj\Debug\netcoreapp2.2\TravelBlog.RazorAssemblyInfo.cs
+C:\Users\ThinkPad\desktop\TravelBlog.Solution\TravelBlog\obj\Debug\netcoreapp2.2\TravelBlog.AssemblyInfoInputs.cache
+C:\Users\ThinkPad\desktop\TravelBlog.Solution\TravelBlog\obj\Debug\netcoreapp2.2\TravelBlog.AssemblyInfo.cs
+C:\Users\ThinkPad\desktop\TravelBlog.Solution\TravelBlog\obj\Debug\netcoreapp2.2\TravelBlog.RazorTargetAssemblyInfo.cache
+C:\Users\ThinkPad\desktop\TravelBlog.Solution\TravelBlog\obj\Debug\netcoreapp2.2\TravelBlog.dll
+C:\Users\ThinkPad\desktop\TravelBlog.Solution\TravelBlog\obj\Debug\netcoreapp2.2\TravelBlog.pdb
