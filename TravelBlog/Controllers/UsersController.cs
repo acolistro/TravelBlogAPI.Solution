@@ -7,8 +7,10 @@ using System.Linq;
 namespace TravelBlog.Controllers
 {
   [Authorize]
-    [TravelBlogController]
+    [ApiController]
     [Route("[controller]")]
+    // [ApiVersion("1.0")]
+
     public class UsersController : ControllerBase
     {
       private IUserService _userService;
