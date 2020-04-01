@@ -17,7 +17,7 @@ namespace TravelBlog.Models
     public int Rating { get; set; }
     [Required]
     public int DestinationId { get; set; }
-    [Required]
-    public virtual Destination Destination { get; set; }
+    // [Required]
+    // public virtual Destination Destination { get; set; }
   }
 }
