@@ -1,12 +1,21 @@
 # Travel Blog API Application
 
-#### _API for interacting with Travel Blog MVC_
+#### _API (for interacting with Travel Blog MVC)_
 
 #### By: **Alex Skreen, Todd Walraven, Alyssa Colistro, Mariam Alaeddin**, April 1-2, 2020
 
 ## Description
 
-_This API interacts with a custom-built TravelBlog MVC, and allows users to GET, POST, PUT, and DELETE reviews about various travel destinations around the world._
+_This API (interacts with a custom-built TravelBlog MVC), and allows users to GET, POST, PUT, and DELETE reviews about various travel destinations around the world._
+
+http://localhost:5004/api/animals/5
+http://azure.cloud/
+
+| Endpoint | Http Action | Return data |
+| ------------- |:-------------:| -------------------:|
+| /api/animals  | GET | { "animalId": 1, "name": "betsey" } |
+| /api/animals  | POST | new Animal in database: { "animalId": 3, "name": "tiger" } |
+
 
 ## Specification user stories:
 | Specification | Example Input | Example Output |
@@ -102,7 +111,7 @@ _To view/edit the source code of this application, open the contents of the Trav
 ## Technologies Used
 
 * Git
-* C#/.NET
+* C# v7.3
 * Visual Studio Code 1.43.1
 * dotnet script 0.50.1
 * MySQL 8.0.15

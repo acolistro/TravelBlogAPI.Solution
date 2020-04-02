@@ -60,13 +60,17 @@
               "version": "[2.2.0, )",
               "autoReferenced": true
             },
+            "Nswag.AspNetCore": {
+              "target": "Package",
+              "version": "[13.3.0, )"
+            },
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",
               "version": "[2.2.0, )"
             },
-            "RestSharp": {
+            "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[106.6.10, )"
+              "version": "[5.2.1, )"
             }
           },
           "imports": [
