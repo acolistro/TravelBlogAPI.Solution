@@ -2,7 +2,7 @@
 
 #### _API for interacting with Travel Blog MVC_
 
-#### By: **Alex Skreen, Todd Walraven, Alyssa Colistro, **, April 1-2, 2020
+#### By: **Alex Skreen, Todd Walraven, Alyssa Colistro, Mariam Alaeddin**, April 1-2, 2020
 
 ## Description
 
@@ -87,6 +87,9 @@ _Enter the following commands in Terminal (macOS) or PowerShell (Windows):_
 * ``cd desktop``
 * ``git clone https://github.com/acolistro/TravelBlogAPI.Solution``
 * ``cd TravelBlogAPI.Solution/TravelBlog``
+* ``dotnet restore``
+* ``dotnet build``
+* ``dotnet ef database update``
 * ``dotnet run`` or ``dotnet watch run``
 
 ## Run this MVC application in another Terminal or PowerShell window
@@ -99,7 +102,7 @@ _To view/edit the source code of this application, open the contents of the Trav
 ## Technologies Used
 
 * Git
-* C#
+* C#/.NET
 * Visual Studio Code 1.43.1
 * dotnet script 0.50.1
 * MySQL 8.0.15
